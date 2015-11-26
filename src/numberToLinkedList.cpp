@@ -46,7 +46,7 @@ struct node * numberToLinkedList(int N) {
 			}
 			else
 			{
-				p = (struct node*)malloc(sizeof(struct node*));
+				p = (struct node *)malloc(sizeof(struct node*));
 				p->num = N % 10;
 				N = N / 10;
 				p->next = head;
@@ -54,6 +54,6 @@ struct node * numberToLinkedList(int N) {
 			}
 
 		}
-		return head;
 	}
+	return head;
 }
